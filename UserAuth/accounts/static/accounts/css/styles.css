@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    background-color: #f0f4f8;  /* Soft light blue */
+    color: #333;  /* Text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;  /* Grass green */
+    color: white;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(76, 175, 80, 0.8)), url('/static/images/grass-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #4CAF50;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Features Section */
+.features-section {
+    background-color: #eaf2e7;  /* Light green for feature background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 1.5em;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);  /* Lift on hover */
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f1f1f1;  /* Light grey for testimonial background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial {
+    width: 40%;
+    background-color: #ecf0f1;  /* Light grey for testimonials */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #2ecc71;  /* Green CTA section */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #4CAF50;  /* Match the header color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button, .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);  /* Move to the final position */
+    }
+}
